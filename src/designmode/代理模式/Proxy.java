@@ -1,7 +1,7 @@
 package designmode.代理模式;
 
 /**
- * Proxy 是一个代理类
+ * Proxy 是一个代理类 静态代理
  * @author panqian
  *
  */

@@ -13,5 +13,7 @@ public class DynamicProxyTest {
         Sourceable sourceable = (Sourceable) Proxy.newProxyInstance(Source.class.getClassLoader(), Source.class.getInterfaces(), dynamicProxy);
 
         sourceable.method();
+        System.out.println("=========");
+        sourceable.method1();
     }
 }

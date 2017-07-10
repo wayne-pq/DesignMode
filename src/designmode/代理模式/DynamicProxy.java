@@ -18,9 +18,17 @@ public class DynamicProxy implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("before dynamicProxy!");
-        method.invoke(object, args);
-        System.out.println("before dynamicProxy!");
+
+        if ("method1".equals(method.getName())) {
+            System.out.println("before dynamicProxy!");
+            method.invoke(object, args);
+            System.out.println("before dynamicProxy!");
+        } else if ("method".equals(method.getName())) {
+            System.out.println("before dynamicProxy1!");
+            method.invoke(object, args);
+            System.out.println("before dynamicProxy1!");
+        }
+
         return null;
     }
 }

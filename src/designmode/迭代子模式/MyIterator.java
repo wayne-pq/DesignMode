@@ -27,10 +27,7 @@ public class MyIterator implements Iterator {
 
 	@Override
 	public boolean hasNext() {
-		if(collection.size()>(pos+1)){
-			return true;
-		}
-		return false;
+		return collection.size() > (pos + 1);
 	}
 
 	@Override

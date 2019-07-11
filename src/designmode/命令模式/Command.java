@@ -6,5 +6,5 @@ package designmode.命令模式;
  *
  */
 public interface Command {
-	public void exe();
+    void exe();
 }

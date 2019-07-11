@@ -6,5 +6,5 @@ package designmode.访问者模式;
  *
  */
 public interface IElement {
-	public void accept(IVisitor visitor);
+    void accept(IVisitor visitor);
 }

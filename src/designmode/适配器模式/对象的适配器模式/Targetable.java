@@ -8,9 +8,9 @@ package designmode.适配器模式.对象的适配器模式;
 public interface Targetable {
 	
 	//于原类中的方法相同	
-	public void method1();
+    void method1();
 
 	//新类的方法
-	public void method2();
+    void method2();
 	
 }

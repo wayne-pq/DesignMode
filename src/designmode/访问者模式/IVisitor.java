@@ -6,8 +6,8 @@ package designmode.访问者模式;
  *
  */
 public interface IVisitor {
-	
-	public void visit(SaveElement element);
 
-	public void visit(FundElement element);
+    void visit(SaveElement element);
+
+    void visit(FundElement element);
 }
